@@ -14,6 +14,7 @@
 </script> 
 
 
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,13 +25,11 @@
   <Navbar/>
 
   <main class="flex justify-center h-screen">
-    
-    
       <div class="w-96">
-        <h1 class="text-center">Flag Guessing Game</h1>
+        <h1 class="bagel-fat text-center">Which country's flag is it?</h1>
         <FlagImage />
         <GameInput on:scoreChanged={() => {}} />
-        <h2 class="text-center">Score: {$score}</h2>
+        <h2 class="bagel-fat text-center">Score: {$score}</h2>
       </div>
 
       <div class="wave"></div>
@@ -141,5 +140,12 @@
       100% {
           transform: translateX(1);
       }
+  }
+  .bagel-fat{
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 2rem;
   }
 </style>

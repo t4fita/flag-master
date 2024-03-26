@@ -35,12 +35,12 @@
 </script>
 
 
-<p class="hearts">{hearts}</p>
+<p class="hearts" style="display: flex; flex-wrap: wrap; justify-content: center;">{hearts}</p>
 <form style="display: flex; flex-wrap: wrap; justify-content: center;">
   {#each options as option (option.name)}
-    <button style="flex: 0 0 45%;" on:click|preventDefault={(event) => handleSubmit(option.name, event)}>{option.name}</button>
+    <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" style="flex: 0 0 45%;" on:click|preventDefault={(event) => handleSubmit(option.name, event)}>{option.name}</button>
   {/each}
-  <p>{feedback}</p>
+  <p class="feedback">{feedback}</p>
 </form>
 
 <style>
@@ -51,5 +51,9 @@
 
   .hearts {
     font-size: 2rem;
+  }
+  .feedback {
+    font-size: 1rem;
+    color: white;
   }
 </style>
