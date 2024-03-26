@@ -7,7 +7,7 @@
     <div class="w-6/12 sm:w-4/12 px-4">
       <img
         src={$currentFlag.imageUrl}
-        alt={$currentFlag.name}
+        alt=""
         class="rounded-lg object-contain h-64 w-64"
         style="width: 300px; height: 200px;"
       />
